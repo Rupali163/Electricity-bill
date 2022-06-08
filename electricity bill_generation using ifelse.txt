@@ -1,0 +1,27 @@
+# 17- Electricity bill
+requirement-
+1.unit <= -50 unit- .050/unit
+2.unit <=100 unit- .075/unit
+3.unit-> 100 unit- 1.25/unit
+4.unit -250 unit- 1.50/unit
+5.additional- 17%'''
+bill = 150
+unit = float(input('Enter the Your  units:'))
+if unit < 50:
+    F1 = (bill + (unit *.50))
+    Final_bill= F1 + (F1 *.17)
+    print('Your Electricity bill is:', Final_bill )
+elif unit <= 100:
+    F1 = (bill + (unit * .75))
+    Final_bill = F1 + (F1 * .17)
+    print('Your Electricity bill is:', Final_bill)
+elif unit >= 100:
+    F1 = (bill + (unit * 1.25))
+    Final_bill = F1 + (F1 * .17)
+    print('Your Electricity bill is:', Final_bill)
+elif unit >= 250:
+    F1 = (bill + (unit * 1.50))
+    Final_bill = F1 + (F1 * .17)
+    print('Your Electricity bill is:', Final_bill)
+else:
+    print('Sorry!!! Server problem')
